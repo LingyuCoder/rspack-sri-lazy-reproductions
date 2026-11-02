@@ -5,5 +5,8 @@ browser-results.json
 cases/03-incremental-runtime-module/runs/
 cases/03-incremental-runtime-module/results.json
 cases/03-incremental-runtime-module/browser-results.json
+cases/04-incremental-runtime-module-hash/runs/
+core
+core.*
 *.log
 .DS_Store

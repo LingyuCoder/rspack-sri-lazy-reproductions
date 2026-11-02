@@ -1,0 +1,560 @@
+{
+  "sourceCommit": "dedf6dffccf250150ec6d3820e6a892468728c3a",
+  "sourceWorktreeClean": true,
+  "bindingModule": "crates/node_binding/binding.js",
+  "node": "v22.16.0",
+  "platform": "darwin-arm64",
+  "results": [
+    {
+      "name": "lazy-default-incremental",
+      "config": {
+        "hashLoading": "lazy",
+        "incremental": true
+      },
+      "code": null,
+      "signal": "SIGABRT",
+      "messages": [
+        {
+          "event": "after-process-assets",
+          "phase": "initial",
+          "mainContainsUpdatedMarker": false,
+          "modifiedFiles": [],
+          "lazyRuntimeModules": [
+            "webpack/runtime/sri_lazy_hashes_a"
+          ],
+          "incrementalLogs": {
+            "rspack.incremental.buildChunkGraph": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "3 chunk group created"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk cache invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group created from cache"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by cannot rebuild"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by incorrect available modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          }
+        },
+        {
+          "event": "build-callback",
+          "phase": "initial"
+        },
+        {
+          "event": "entry-edit",
+          "change": "buildMarker: 'initial' -> 'updated'; imports unchanged"
+        },
+        {
+          "event": "after-process-assets",
+          "phase": "rebuild",
+          "mainContainsUpdatedMarker": true,
+          "modifiedFiles": [
+            "index.js"
+          ],
+          "lazyRuntimeModules": [
+            "webpack/runtime/sri_lazy_hashes_a"
+          ],
+          "incrementalLogs": {
+            "rspack.incremental.chunkAsset": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunkIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 chunks are updated by set_chunk_id, with 3 chunks using name as id, and 0 unnamed chunks"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunksHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.finishModules": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_async"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.moduleIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_module_id, with 0 unnamed modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesCodegen": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          }
+        }
+      ],
+      "stdout": "",
+      "stderr": "DebugInfo:\n\n\u001b[1m\u001b[33mcontext\u001b[0m: ./cases/04-incremental-runtime-module-hash/runs/lazy-default-incremental/src\n\nPanic occurred at runtime. Please file an issue on GitHub with the panic info and backtrace below: https://github.com/web-infra-dev/rspack/issues\n\nthread 'tokio-10' (1343331) panicked at crates/rspack_core/src/compiler/rebuild.rs:209:16:\nshould have runtime module hash\nstack backtrace:\n   0: __rustc::rust_begin_unwind\n             at /rustc/e8e4541ff19649d95afab52fdde2c2eaa6829965/library/std/src/panicking.rs:689:5\n   1: core::panicking::panic_fmt\n             at /rustc/e8e4541ff19649d95afab52fdde2c2eaa6829965/library/core/src/panicking.rs:80:14\n   2: core::panicking::panic_display::<&str>\n             at /rustc/e8e4541ff19649d95afab52fdde2c2eaa6829965/library/core/src/panicking.rs:259:5\n   3: core::option::expect_failed\n             at /rustc/e8e4541ff19649d95afab52fdde2c2eaa6829965/library/core/src/option.rs:2260:5\n   4: <core::option::Option<&rspack_hash::RspackHashDigest>>::expect\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/option.rs:971:21\n   5: <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}\n             at <rspack>/crates/rspack_core/src/compiler/rebuild.rs:209:16\n   6: core::iter::adapters::map::map_fold::<(&rspack_collections::identifier::Identifier, &alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>), (rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), (), <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}, core::iter::traits::iterator::Iterator::for_each::call<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), <hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>::{closure#0}>::{closure#0}>::{closure#0}\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/iter/adapters/map.rs:88:28\n   7: <hashbrown::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>> as core::iter::traits::iterator::Iterator>::fold::<(), core::iter::adapters::map::map_fold<(&rspack_collections::identifier::Identifier, &alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>), (rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), (), <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}, core::iter::traits::iterator::Iterator::for_each::call<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), <hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>::{closure#0}>::{closure#0}>::{closure#0}>::{closure#0}\n             at /rust/deps/hashbrown-0.17.0/src/map.rs:3167:13\n   8: <hashbrown::raw::RawIterRange<(rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>)>>::fold_impl::<<hashbrown::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>> as core::iter::traits::iterator::Iterator>::fold<(), core::iter::adapters::map::map_fold<(&rspack_collections::identifier::Identifier, &alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>), (rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), (), <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}, core::iter::traits::iterator::Iterator::for_each::call<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), <hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>::{closure#0}>::{closure#0}>::{closure#0}>::{closure#0}, ()>\n             at /rust/deps/hashbrown-0.17.0/src/raw.rs:3709:23\n   9: <hashbrown::raw::RawIter<(rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>)> as core::iter::traits::iterator::Iterator>::fold::<(), <hashbrown::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>> as core::iter::traits::iterator::Iterator>::fold<(), core::iter::adapters::map::map_fold<(&rspack_collections::identifier::Identifier, &alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>), (rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), (), <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}, core::iter::traits::iterator::Iterator::for_each::call<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), <hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>::{closure#0}>::{closure#0}>::{closure#0}>::{closure#0}>\n             at /rust/deps/hashbrown-0.17.0/src/raw.rs:3879:28\n  10: <hashbrown::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>> as core::iter::traits::iterator::Iterator>::fold::<(), core::iter::adapters::map::map_fold<(&rspack_collections::identifier::Identifier, &alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>), (rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), (), <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}, core::iter::traits::iterator::Iterator::for_each::call<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), <hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>::{closure#0}>::{closure#0}>::{closure#0}>\n             at /rust/deps/hashbrown-0.17.0/src/map.rs:3165:20\n  11: <std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>> as core::iter::traits::iterator::Iterator>::fold::<(), core::iter::adapters::map::map_fold<(&rspack_collections::identifier::Identifier, &alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>), (rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), (), <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}, core::iter::traits::iterator::Iterator::for_each::call<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), <hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>::{closure#0}>::{closure#0}>::{closure#0}>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/collections/hash/map.rs:2127:19\n  12: <core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}> as core::iter::traits::iterator::Iterator>::fold::<(), core::iter::traits::iterator::Iterator::for_each::call<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord), <hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>::{closure#0}>::{closure#0}>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/iter/adapters/map.rs:128:19\n  13: <core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}> as core::iter::traits::iterator::Iterator>::for_each::<<hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>::{closure#0}>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/iter/traits/iterator.rs:889:14\n  14: <hashbrown::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend::<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>\n             at /rust/deps/hashbrown-0.17.0/src/map.rs:4879:14\n  15: <std::collections::hash::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::Extend<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::extend::<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/collections/hash/map.rs:2970:19\n  16: <std::collections::hash::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>> as core::iter::traits::collect::FromIterator<(rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord)>>::from_iter::<core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/collections/hash/map.rs:2954:13\n  17: <core::iter::adapters::map::Map<std::collections::hash::map::Iter<rspack_collections::identifier::Identifier, alloc::boxed::Box<dyn rspack_core::runtime_module::RuntimeModule>>, <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules::{closure#0}> as core::iter::traits::iterator::Iterator>::collect::<std::collections::hash::map::HashMap<rspack_collections::identifier::Identifier, rspack_core::runtime_module::RuntimeModuleRecord, core::hash::BuildHasherDefault<ustr_fxhash::hash::IdentityHasher>>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/iter/traits/iterator.rs:2092:9\n  18: <rspack_core::compiler::rebuild::CompilationRecords>::record_runtime_modules\n             at <rspack>/crates/rspack_core/src/compiler/rebuild.rs:217:8\n  19: <rspack_core::compiler::rebuild::CompilationRecords>::record\n             at <rspack>/crates/rspack_core/src/compiler/rebuild.rs:156:24\n  20: <rspack_core::compiler::Compiler>::compile_done::{closure#0}::{closure#0}\n             at <rspack>/crates/rspack_core/src/compiler/mod.rs:402:41\n  21: <rspack_core::compiler::Compiler>::compile_done::{closure#0}\n             at <rspack>/crates/rspack_core/src/compiler/mod.rs:387:3\n  22: <rspack_core::compiler::Compiler>::rebuild_inner::{closure#0}::{closure#0}\n             at <rspack>/crates/rspack_core/src/compiler/rebuild.rs:133:25\n  23: <rspack_core::compiler::Compiler>::rebuild_inner::{closure#0}\n             at <rspack>/crates/rspack_core/src/compiler/rebuild.rs:52:3\n  24: <tokio::task::task_local::TaskLocalFuture<alloc::sync::Arc<rspack_tasks::CompilerContext>, <rspack_core::compiler::Compiler>::rebuild_inner::{closure#0}> as core::future::future::Future>::poll::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/task/task_local.rs:401:35\n  25: <tokio::task::task_local::LocalKey<alloc::sync::Arc<rspack_tasks::CompilerContext>>>::scope_inner::<<tokio::task::task_local::TaskLocalFuture<alloc::sync::Arc<rspack_tasks::CompilerContext>, <rspack_core::compiler::Compiler>::rebuild_inner::{closure#0}> as core::future::future::Future>::poll::{closure#0}, core::option::Option<core::task::poll::Poll<core::result::Result<(), rspack_error::error::Error>>>>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/task/task_local.rs:217:19\n  26: <tokio::task::task_local::TaskLocalFuture<alloc::sync::Arc<rspack_tasks::CompilerContext>, <rspack_core::compiler::Compiler>::rebuild_inner::{closure#0}> as core::future::future::Future>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/task/task_local.rs:399:14\n  27: <rspack_core::compiler::Compiler>::rebuild::{closure#0}\n             at <rspack>/crates/rspack_core/src/compiler/rebuild.rs:28:6\n  28: <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}\n             at <rspack>/crates/rspack_binding_api/src/lib.rs:489:16\n  29: <core::panic::unwind_safe::AssertUnwindSafe<<rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}> as core::future::future::Future>::poll\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/panic/unwind_safe.rs:300:9\n  30: <futures_util::future::future::catch_unwind::CatchUnwind<core::panic::unwind_safe::AssertUnwindSafe<<rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}>> as core::future::future::Future>::poll::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.34/src/future/future/catch_unwind.rs:37:44\n  31: <core::panic::unwind_safe::AssertUnwindSafe<<futures_util::future::future::catch_unwind::CatchUnwind<core::panic::unwind_safe::AssertUnwindSafe<<rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}>> as core::future::future::Future>::poll::{closure#0}> as core::ops::function::FnOnce<()>>::call_once\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/panic/unwind_safe.rs:275:9\n  32: std::panicking::catch_unwind::do_call::<core::panic::unwind_safe::AssertUnwindSafe<<futures_util::future::future::catch_unwind::CatchUnwind<core::panic::unwind_safe::AssertUnwindSafe<<rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}>> as core::future::future::Future>::poll::{closure#0}>, core::task::poll::Poll<core::result::Result<(), napi::error::Error<rspack_binding_api::error::ErrorCode>>>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panicking.rs:581:40\n  33: std::panicking::catch_unwind::<core::task::poll::Poll<core::result::Result<(), napi::error::Error<rspack_binding_api::error::ErrorCode>>>, core::panic::unwind_safe::AssertUnwindSafe<<futures_util::future::future::catch_unwind::CatchUnwind<core::panic::unwind_safe::AssertUnwindSafe<<rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}>> as core::future::future::Future>::poll::{closure#0}>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panicking.rs:544:19\n  34: std::panic::catch_unwind::<core::panic::unwind_safe::AssertUnwindSafe<<futures_util::future::future::catch_unwind::CatchUnwind<core::panic::unwind_safe::AssertUnwindSafe<<rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}>> as core::future::future::Future>::poll::{closure#0}>, core::task::poll::Poll<core::result::Result<(), napi::error::Error<rspack_binding_api::error::ErrorCode>>>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panic.rs:359:14\n  35: <futures_util::future::future::catch_unwind::CatchUnwind<core::panic::unwind_safe::AssertUnwindSafe<<rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}>> as core::future::future::Future>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.34/src/future/future/catch_unwind.rs:37:9\n  36: rspack_binding_api::utils::callbackify::<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}\n             at <rspack>/crates/rspack_binding_api/src/utils.rs:40:58\n  37: <core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>> as core::future::future::Future>::poll\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/future/future.rs:133:9\n  38: <tokio::runtime::task::core::Core<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>>::poll::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/core.rs:380:24\n  39: <tokio::loom::std::unsafe_cell::UnsafeCell<tokio::runtime::task::core::Stage<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>>>>::with_mut::<core::task::poll::Poll<()>, <tokio::runtime::task::core::Core<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>>::poll::{closure#0}>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/loom/std/unsafe_cell.rs:16:9\n  40: <tokio::runtime::task::core::Core<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/core.rs:369:30\n  41: tokio::runtime::task::harness::poll_future::<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/harness.rs:535:30\n  42: <core::panic::unwind_safe::AssertUnwindSafe<tokio::runtime::task::harness::poll_future<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>::{closure#0}> as core::ops::function::FnOnce<()>>::call_once\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/panic/unwind_safe.rs:275:9\n  43: std::panicking::catch_unwind::do_call::<core::panic::unwind_safe::AssertUnwindSafe<tokio::runtime::task::harness::poll_future<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>::{closure#0}>, core::task::poll::Poll<()>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panicking.rs:581:40\n  44: std::panicking::catch_unwind::<core::task::poll::Poll<()>, core::panic::unwind_safe::AssertUnwindSafe<tokio::runtime::task::harness::poll_future<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>::{closure#0}>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panicking.rs:544:19\n  45: std::panic::catch_unwind::<core::panic::unwind_safe::AssertUnwindSafe<tokio::runtime::task::harness::poll_future<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>::{closure#0}>, core::task::poll::Poll<()>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panic.rs:359:14\n  46: tokio::runtime::task::harness::poll_future::<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/harness.rs:523:18\n  47: <tokio::runtime::task::harness::Harness<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>>::poll_inner\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/harness.rs:210:27\n  48: <tokio::runtime::task::harness::Harness<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/harness.rs:155:20\n  49: tokio::runtime::task::raw::poll::<core::pin::Pin<alloc::boxed::Box<rspack_binding_api::utils::callbackify<(), <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#0}, <rspack_binding_api::JsCompiler>::rebuild::{closure#0}::{closure#1}>::{closure#2}>>, alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/raw.rs:337:13\n  50: <tokio::runtime::task::raw::RawTask>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/raw.rs:267:18\n  51: <tokio::runtime::task::LocalNotified<alloc::sync::Arc<tokio::runtime::scheduler::multi_thread::handle::Handle>>>::run\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/mod.rs:519:13\n  52: <tokio::runtime::scheduler::multi_thread::worker::Context>::run_task::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/scheduler/multi_thread/worker.rs:698:18\n  53: tokio::task::coop::with_budget::<core::result::Result<alloc::boxed::Box<tokio::runtime::scheduler::multi_thread::worker::Core>, ()>, <tokio::runtime::scheduler::multi_thread::worker::Context>::run_task::{closure#0}>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/task/coop/mod.rs:167:5\n  54: tokio::task::coop::budget::<core::result::Result<alloc::boxed::Box<tokio::runtime::scheduler::multi_thread::worker::Core>, ()>, <tokio::runtime::scheduler::multi_thread::worker::Context>::run_task::{closure#0}>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/task/coop/mod.rs:133:5\n  55: <tokio::runtime::scheduler::multi_thread::worker::Context>::run_task\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/scheduler/multi_thread/worker.rs:689:9\n  56: <tokio::runtime::scheduler::multi_thread::worker::Context>::run\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/scheduler/multi_thread/worker.rs:596:29\n  57: tokio::runtime::scheduler::multi_thread::worker::run::{closure#0}::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/scheduler/multi_thread/worker.rs:561:24\n  58: <tokio::runtime::context::scoped::Scoped<tokio::runtime::scheduler::Context>>::set::<tokio::runtime::scheduler::multi_thread::worker::run::{closure#0}::{closure#0}, ()>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/context/scoped.rs:40:9\n  59: tokio::runtime::context::set_scheduler::<(), tokio::runtime::scheduler::multi_thread::worker::run::{closure#0}::{closure#0}>::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/context.rs:187:38\n  60: <std::thread::local::LocalKey<tokio::runtime::context::Context>>::try_with::<tokio::runtime::context::set_scheduler<(), tokio::runtime::scheduler::multi_thread::worker::run::{closure#0}::{closure#0}>::{closure#0}, ()>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/thread/local.rs:462:12\n  61: <std::thread::local::LocalKey<tokio::runtime::context::Context>>::with::<tokio::runtime::context::set_scheduler<(), tokio::runtime::scheduler::multi_thread::worker::run::{closure#0}::{closure#0}>::{closure#0}, ()>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/thread/local.rs:426:20\n  62: tokio::runtime::context::set_scheduler::<(), tokio::runtime::scheduler::multi_thread::worker::run::{closure#0}::{closure#0}>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/context.rs:187:17\n  63: tokio::runtime::scheduler::multi_thread::worker::run::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/scheduler/multi_thread/worker.rs:556:9\n  64: tokio::runtime::context::runtime::enter_runtime::<tokio::runtime::scheduler::multi_thread::worker::run::{closure#0}, ()>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/context/runtime.rs:65:16\n  65: tokio::runtime::scheduler::multi_thread::worker::run\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/scheduler/multi_thread/worker.rs:548:5\n  66: <tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/scheduler/multi_thread/worker.rs:514:45\n  67: <tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}> as core::future::future::Future>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/blocking/task.rs:42:21\n  68: <tokio::runtime::task::core::Core<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>>::poll::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/core.rs:380:24\n  69: <tokio::loom::std::unsafe_cell::UnsafeCell<tokio::runtime::task::core::Stage<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>>>>::with_mut::<core::task::poll::Poll<()>, <tokio::runtime::task::core::Core<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>>::poll::{closure#0}>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/loom/std/unsafe_cell.rs:16:9\n  70: <tokio::runtime::task::core::Core<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/core.rs:369:30\n  71: tokio::runtime::task::harness::poll_future::<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/harness.rs:535:30\n  72: <core::panic::unwind_safe::AssertUnwindSafe<tokio::runtime::task::harness::poll_future<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>::{closure#0}> as core::ops::function::FnOnce<()>>::call_once\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/panic/unwind_safe.rs:275:9\n  73: std::panicking::catch_unwind::do_call::<core::panic::unwind_safe::AssertUnwindSafe<tokio::runtime::task::harness::poll_future<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>::{closure#0}>, core::task::poll::Poll<()>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panicking.rs:581:40\n  74: std::panicking::catch_unwind::<core::task::poll::Poll<()>, core::panic::unwind_safe::AssertUnwindSafe<tokio::runtime::task::harness::poll_future<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>::{closure#0}>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panicking.rs:544:19\n  75: std::panic::catch_unwind::<core::panic::unwind_safe::AssertUnwindSafe<tokio::runtime::task::harness::poll_future<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>::{closure#0}>, core::task::poll::Poll<()>>\n             at <home>/.rustup/toolchains/nightly-2026-04-16-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/panic.rs:359:14\n  76: tokio::runtime::task::harness::poll_future::<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/harness.rs:523:18\n  77: <tokio::runtime::task::harness::Harness<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>>::poll_inner\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/harness.rs:210:27\n  78: <tokio::runtime::task::harness::Harness<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/harness.rs:155:20\n  79: tokio::runtime::task::raw::poll::<tokio::runtime::blocking::task::BlockingTask<<tokio::runtime::scheduler::multi_thread::worker::Launch>::launch::{closure#0}>, tokio::runtime::blocking::schedule::BlockingSchedule>\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/raw.rs:337:13\n  80: <tokio::runtime::task::raw::RawTask>::poll\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/raw.rs:267:18\n  81: <tokio::runtime::task::UnownedTask<tokio::runtime::blocking::schedule::BlockingSchedule>>::run\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/task/mod.rs:556:13\n  82: <tokio::runtime::blocking::pool::Task>::run\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/blocking/pool.rs:161:19\n  83: <tokio::runtime::blocking::pool::Inner>::run\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/blocking/pool.rs:520:22\n  84: <tokio::runtime::blocking::pool::Spawner>::spawn_thread::{closure#0}\n             at <home>/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.53.2/src/runtime/blocking/pool.rs:476:47\nnote: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.\n"
+    },
+    {
+      "name": "lazy-full-chunk-hashes",
+      "config": {
+        "hashLoading": "lazy",
+        "incremental": {
+          "chunksHashes": false
+        }
+      },
+      "code": 0,
+      "signal": null,
+      "messages": [
+        {
+          "event": "after-process-assets",
+          "phase": "initial",
+          "mainContainsUpdatedMarker": false,
+          "modifiedFiles": [],
+          "lazyRuntimeModules": [
+            "webpack/runtime/sri_lazy_hashes_a"
+          ],
+          "incrementalLogs": {
+            "rspack.incremental.buildChunkGraph": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "3 chunk group created"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk cache invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group created from cache"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by cannot rebuild"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by incorrect available modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          }
+        },
+        {
+          "event": "build-callback",
+          "phase": "initial"
+        },
+        {
+          "event": "entry-edit",
+          "change": "buildMarker: 'initial' -> 'updated'; imports unchanged"
+        },
+        {
+          "event": "after-process-assets",
+          "phase": "rebuild",
+          "mainContainsUpdatedMarker": true,
+          "modifiedFiles": [
+            "index.js"
+          ],
+          "lazyRuntimeModules": [
+            "webpack/runtime/sri_lazy_hashes_a"
+          ],
+          "incrementalLogs": {
+            "rspack.incremental.chunkAsset": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "3 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunkIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 chunks are updated by set_chunk_id, with 3 chunks using name as id, and 0 unnamed chunks"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.finishModules": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_async"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.moduleIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_module_id, with 0 unnamed modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesCodegen": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          }
+        },
+        {
+          "event": "build-callback",
+          "phase": "rebuild"
+        },
+        {
+          "event": "complete"
+        }
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "eager-default-incremental",
+      "config": {
+        "hashLoading": "eager",
+        "incremental": true
+      },
+      "code": 0,
+      "signal": null,
+      "messages": [
+        {
+          "event": "after-process-assets",
+          "phase": "initial",
+          "mainContainsUpdatedMarker": false,
+          "modifiedFiles": [],
+          "lazyRuntimeModules": [],
+          "incrementalLogs": {
+            "rspack.incremental.buildChunkGraph": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "3 chunk group created"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk cache invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group created from cache"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by cannot rebuild"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by incorrect available modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          }
+        },
+        {
+          "event": "build-callback",
+          "phase": "initial"
+        },
+        {
+          "event": "entry-edit",
+          "change": "buildMarker: 'initial' -> 'updated'; imports unchanged"
+        },
+        {
+          "event": "after-process-assets",
+          "phase": "rebuild",
+          "mainContainsUpdatedMarker": true,
+          "modifiedFiles": [
+            "index.js"
+          ],
+          "lazyRuntimeModules": [],
+          "incrementalLogs": {
+            "rspack.incremental.chunkAsset": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunkIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 chunks are updated by set_chunk_id, with 3 chunks using name as id, and 0 unnamed chunks"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunksHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunksRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.finishModules": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_async"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.moduleIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_module_id, with 0 unnamed modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesCodegen": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          }
+        },
+        {
+          "event": "build-callback",
+          "phase": "rebuild"
+        },
+        {
+          "event": "complete"
+        }
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "lazy-no-incremental",
+      "config": {
+        "hashLoading": "lazy",
+        "incremental": false
+      },
+      "code": 0,
+      "signal": null,
+      "messages": [
+        {
+          "event": "after-process-assets",
+          "phase": "initial",
+          "mainContainsUpdatedMarker": false,
+          "modifiedFiles": [],
+          "lazyRuntimeModules": [
+            "webpack/runtime/sri_lazy_hashes_a"
+          ],
+          "incrementalLogs": {}
+        },
+        {
+          "event": "build-callback",
+          "phase": "initial"
+        },
+        {
+          "event": "entry-edit",
+          "change": "buildMarker: 'initial' -> 'updated'; imports unchanged"
+        },
+        {
+          "event": "after-process-assets",
+          "phase": "rebuild",
+          "mainContainsUpdatedMarker": true,
+          "modifiedFiles": [
+            "index.js"
+          ],
+          "lazyRuntimeModules": [
+            "webpack/runtime/sri_lazy_hashes_a"
+          ],
+          "incrementalLogs": {}
+        },
+        {
+          "event": "build-callback",
+          "phase": "rebuild"
+        },
+        {
+          "event": "complete"
+        }
+      ],
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

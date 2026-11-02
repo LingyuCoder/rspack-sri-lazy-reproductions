@@ -5,6 +5,7 @@
   "scripts": {
     "reproduce": "node scripts/build-cases.mjs && node cases/03-incremental-runtime-module/reproduce.mjs && node scripts/browser-check.mjs && node cases/03-incremental-runtime-module/browser-check.mjs && node scripts/collect-evidence.mjs",
     "reproduce:static": "node scripts/build-cases.mjs && node scripts/browser-check.mjs",
-    "reproduce:incremental": "node cases/03-incremental-runtime-module/reproduce.mjs && node cases/03-incremental-runtime-module/browser-check.mjs"
+    "reproduce:incremental": "node cases/03-incremental-runtime-module/reproduce.mjs && node cases/03-incremental-runtime-module/browser-check.mjs",
+    "reproduce:hash-records": "node cases/04-incremental-runtime-module-hash/reproduce.mjs"
   }
 }
