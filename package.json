@@ -1,0 +1,10 @@
+{
+  "name": "rspack-sri-lazy-reproductions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "reproduce": "node scripts/build-cases.mjs && node cases/03-incremental-runtime-module/reproduce.mjs && node scripts/browser-check.mjs && node cases/03-incremental-runtime-module/browser-check.mjs && node scripts/collect-evidence.mjs",
+    "reproduce:static": "node scripts/build-cases.mjs && node scripts/browser-check.mjs",
+    "reproduce:incremental": "node cases/03-incremental-runtime-module/reproduce.mjs && node cases/03-incremental-runtime-module/browser-check.mjs"
+  }
+}

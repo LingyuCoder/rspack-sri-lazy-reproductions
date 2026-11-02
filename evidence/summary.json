@@ -1,0 +1,1937 @@
+{
+  "sourceCommit": "ba2e2eef60d53a3ede5882c3cde08fc2a94a3fb6",
+  "sourceWorktreeClean": true,
+  "node": "v22.16.0",
+  "chromium": "153.0.8010.12",
+  "staticBuilds": [
+    {
+      "name": "depend-on-lazy",
+      "assets": {
+        "main.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "runtime.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "shared.js": {
+          "initializesHashes": false,
+          "registersHashes": true,
+          "hashStrings": [
+            "sha256-OOIX7JKf2sOlj7ge4C36/a2G3kuE+Sia+jtvWOdjt90="
+          ]
+        }
+      },
+      "chunkGroups": {
+        "main": {
+          "name": "main",
+          "chunks": [
+            "main"
+          ],
+          "assets": [
+            {
+              "name": "main.js",
+              "size": 648
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 648
+        },
+        "shared": {
+          "name": "shared",
+          "chunks": [
+            "runtime",
+            "shared"
+          ],
+          "assets": [
+            {
+              "name": "runtime.js",
+              "size": 3802
+            },
+            {
+              "name": "shared.js",
+              "size": 656
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 4458
+        }
+      },
+      "chunks": [
+        {
+          "names": [
+            "main"
+          ],
+          "files": [
+            "main.js"
+          ]
+        },
+        {
+          "names": [
+            "runtime"
+          ],
+          "files": [
+            "runtime.js"
+          ]
+        },
+        {
+          "names": [
+            "shared"
+          ],
+          "files": [
+            "shared.js"
+          ]
+        }
+      ],
+      "lazyRuntimeModules": [
+        "webpack/runtime/sri_lazy_hashes_shared"
+      ]
+    },
+    {
+      "name": "depend-on-eager",
+      "assets": {
+        "main.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "runtime.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "shared.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        }
+      },
+      "chunkGroups": {
+        "main": {
+          "name": "main",
+          "chunks": [
+            "main"
+          ],
+          "assets": [
+            {
+              "name": "main.js",
+              "size": 648
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 648
+        },
+        "shared": {
+          "name": "shared",
+          "chunks": [
+            "runtime",
+            "shared"
+          ],
+          "assets": [
+            {
+              "name": "runtime.js",
+              "size": 3802
+            },
+            {
+              "name": "shared.js",
+              "size": 488
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 4290
+        }
+      },
+      "chunks": [
+        {
+          "names": [
+            "main"
+          ],
+          "files": [
+            "main.js"
+          ]
+        },
+        {
+          "names": [
+            "runtime"
+          ],
+          "files": [
+            "runtime.js"
+          ]
+        },
+        {
+          "names": [
+            "shared"
+          ],
+          "files": [
+            "shared.js"
+          ]
+        }
+      ],
+      "lazyRuntimeModules": []
+    },
+    {
+      "name": "depend-on-lazy-with-async",
+      "assets": {
+        "extra.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "main.js": {
+          "initializesHashes": false,
+          "registersHashes": true,
+          "hashStrings": [
+            "sha256-DMJ6Fn28woOfMiTPo7NNvhgsHpxyMF0iin8TDsJW2n4="
+          ]
+        },
+        "runtime.js": {
+          "initializesHashes": true,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "shared.js": {
+          "initializesHashes": false,
+          "registersHashes": true,
+          "hashStrings": [
+            "sha256-kajCiqZLgiZ7MeG3XtBZ5u7MiGe0/3nRe72G264zLbk="
+          ]
+        }
+      },
+      "chunkGroups": {
+        "extra": {
+          "name": "extra",
+          "chunks": [
+            "extra"
+          ],
+          "assets": [
+            {
+              "name": "extra.js",
+              "size": 323
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 323
+        },
+        "main": {
+          "name": "main",
+          "chunks": [
+            "main"
+          ],
+          "assets": [
+            {
+              "name": "main.js",
+              "size": 1123
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 1123
+        },
+        "shared": {
+          "name": "shared",
+          "chunks": [
+            "runtime",
+            "shared"
+          ],
+          "assets": [
+            {
+              "name": "runtime.js",
+              "size": 9886
+            },
+            {
+              "name": "shared.js",
+              "size": 656
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 10542
+        }
+      },
+      "chunks": [
+        {
+          "names": [
+            "extra"
+          ],
+          "files": [
+            "extra.js"
+          ]
+        },
+        {
+          "names": [
+            "main"
+          ],
+          "files": [
+            "main.js"
+          ]
+        },
+        {
+          "names": [
+            "runtime"
+          ],
+          "files": [
+            "runtime.js"
+          ]
+        },
+        {
+          "names": [
+            "shared"
+          ],
+          "files": [
+            "shared.js"
+          ]
+        }
+      ],
+      "lazyRuntimeModules": [
+        "webpack/runtime/sri_lazy_hashes_main",
+        "webpack/runtime/sri_lazy_hashes_shared"
+      ]
+    },
+    {
+      "name": "css-carrier-lazy",
+      "assets": {
+        "a-code.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "a.css": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "b.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "main.js": {
+          "initializesHashes": true,
+          "registersHashes": false,
+          "hashStrings": [
+            "sha256-0fBcWJx+xvsVddxFjz0BpVI7FxZTtH/qC+LWYD6TYp4=",
+            "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+          ]
+        }
+      },
+      "chunkGroups": {
+        "a": {
+          "name": "a",
+          "chunks": [
+            "a-code",
+            "a"
+          ],
+          "assets": [
+            {
+              "name": "a-code.js",
+              "size": 380
+            },
+            {
+              "name": "a.css",
+              "size": 34
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 414
+        },
+        "b": {
+          "name": "b",
+          "chunks": [
+            "b"
+          ],
+          "assets": [
+            {
+              "name": "b.js",
+              "size": 317
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 317
+        },
+        "main": {
+          "name": "main",
+          "chunks": [
+            "main"
+          ],
+          "assets": [
+            {
+              "name": "main.js",
+              "size": 13733
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 13733
+        }
+      },
+      "chunks": [
+        {
+          "names": [
+            "a"
+          ],
+          "files": [
+            "a.css"
+          ]
+        },
+        {
+          "names": [
+            "a-code"
+          ],
+          "files": [
+            "a-code.js"
+          ]
+        },
+        {
+          "names": [
+            "b"
+          ],
+          "files": [
+            "b.js"
+          ]
+        },
+        {
+          "names": [
+            "main"
+          ],
+          "files": [
+            "main.js"
+          ]
+        }
+      ],
+      "lazyRuntimeModules": [
+        "webpack/runtime/sri_lazy_hashes_a"
+      ]
+    },
+    {
+      "name": "css-carrier-eager",
+      "assets": {
+        "a-code.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "a.css": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "b.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "main.js": {
+          "initializesHashes": true,
+          "registersHashes": false,
+          "hashStrings": [
+            "sha256-0fBcWJx+xvsVddxFjz0BpVI7FxZTtH/qC+LWYD6TYp4=",
+            "sha256-Pw7Zh8BVjsGNvrU1pAqFSTcja4/yg6bf0XKWwmVpFLI=",
+            "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+          ]
+        }
+      },
+      "chunkGroups": {
+        "a": {
+          "name": "a",
+          "chunks": [
+            "a-code",
+            "a"
+          ],
+          "assets": [
+            {
+              "name": "a-code.js",
+              "size": 380
+            },
+            {
+              "name": "a.css",
+              "size": 34
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 414
+        },
+        "b": {
+          "name": "b",
+          "chunks": [
+            "b"
+          ],
+          "assets": [
+            {
+              "name": "b.js",
+              "size": 317
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 317
+        },
+        "main": {
+          "name": "main",
+          "chunks": [
+            "main"
+          ],
+          "assets": [
+            {
+              "name": "main.js",
+              "size": 13792
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 13792
+        }
+      },
+      "chunks": [
+        {
+          "names": [
+            "a"
+          ],
+          "files": [
+            "a.css"
+          ]
+        },
+        {
+          "names": [
+            "a-code"
+          ],
+          "files": [
+            "a-code.js"
+          ]
+        },
+        {
+          "names": [
+            "b"
+          ],
+          "files": [
+            "b.js"
+          ]
+        },
+        {
+          "names": [
+            "main"
+          ],
+          "files": [
+            "main.js"
+          ]
+        }
+      ],
+      "lazyRuntimeModules": []
+    },
+    {
+      "name": "css-carrier-lazy-no-split",
+      "assets": {
+        "a.css": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "a.js": {
+          "initializesHashes": false,
+          "registersHashes": true,
+          "hashStrings": [
+            "sha256-Pw7Zh8BVjsGNvrU1pAqFSTcja4/yg6bf0XKWwmVpFLI="
+          ]
+        },
+        "b.js": {
+          "initializesHashes": false,
+          "registersHashes": false,
+          "hashStrings": []
+        },
+        "main.js": {
+          "initializesHashes": true,
+          "registersHashes": false,
+          "hashStrings": [
+            "sha256-ycU86yYBlssVvEMsQaqeYVuQWKZKeS/pL124u51LhzA=",
+            "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+          ]
+        }
+      },
+      "chunkGroups": {
+        "a": {
+          "name": "a",
+          "chunks": [
+            "a"
+          ],
+          "assets": [
+            {
+              "name": "a.js",
+              "size": 571
+            },
+            {
+              "name": "a.css",
+              "size": 34
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 605
+        },
+        "b": {
+          "name": "b",
+          "chunks": [
+            "b"
+          ],
+          "assets": [
+            {
+              "name": "b.js",
+              "size": 317
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 317
+        },
+        "main": {
+          "name": "main",
+          "chunks": [
+            "main"
+          ],
+          "assets": [
+            {
+              "name": "main.js",
+              "size": 13631
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": 13631
+        }
+      },
+      "chunks": [
+        {
+          "names": [
+            "a"
+          ],
+          "files": [
+            "a.css",
+            "a.js"
+          ]
+        },
+        {
+          "names": [
+            "b"
+          ],
+          "files": [
+            "b.js"
+          ]
+        },
+        {
+          "names": [
+            "main"
+          ],
+          "files": [
+            "main.js"
+          ]
+        }
+      ],
+      "lazyRuntimeModules": [
+        "webpack/runtime/sri_lazy_hashes_a"
+      ]
+    }
+  ],
+  "staticBrowser": [
+    {
+      "name": "depend-on-lazy",
+      "behavior": "normal",
+      "loaded": false,
+      "value": null,
+      "tamperedExecuted": false,
+      "requests": [],
+      "pageErrors": [
+        "TypeError: Cannot convert undefined or null to object"
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "depend-on-eager",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "shared:ready",
+      "tamperedExecuted": false,
+      "requests": [],
+      "pageErrors": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "depend-on-lazy-with-async",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "shared:ready",
+      "tamperedExecuted": false,
+      "requests": [],
+      "pageErrors": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "css-carrier-lazy",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:ready",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-lazy/a-code.js",
+          "integrity": "sha256-0fBcWJx+xvsVddxFjz0BpVI7FxZTtH/qC+LWYD6TYp4="
+        },
+        {
+          "tag": "LINK",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-lazy/a.css",
+          "integrity": "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+        },
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-lazy/b.js",
+          "integrity": "undefined"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Error parsing 'integrity' attribute ('undefined'). The hash algorithm must be one of 'sha256', 'sha384', 'sha512', or 'ed21159', followed by a '-' character."
+      ]
+    },
+    {
+      "name": "css-carrier-lazy",
+      "behavior": "tampered",
+      "loaded": true,
+      "value": "b:ready",
+      "tamperedExecuted": true,
+      "requests": [
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-lazy/a-code.js",
+          "integrity": "sha256-0fBcWJx+xvsVddxFjz0BpVI7FxZTtH/qC+LWYD6TYp4="
+        },
+        {
+          "tag": "LINK",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-lazy/a.css",
+          "integrity": "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+        },
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-lazy/b.js",
+          "integrity": "undefined"
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Error parsing 'integrity' attribute ('undefined'). The hash algorithm must be one of 'sha256', 'sha384', 'sha512', or 'ed21159', followed by a '-' character."
+      ]
+    },
+    {
+      "name": "css-carrier-eager",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:ready",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-eager/a-code.js",
+          "integrity": "sha256-0fBcWJx+xvsVddxFjz0BpVI7FxZTtH/qC+LWYD6TYp4="
+        },
+        {
+          "tag": "LINK",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-eager/a.css",
+          "integrity": "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+        },
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-eager/b.js",
+          "integrity": "sha256-Pw7Zh8BVjsGNvrU1pAqFSTcja4/yg6bf0XKWwmVpFLI="
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "css-carrier-eager",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/css-carrier-eager/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-eager/a-code.js",
+          "integrity": "sha256-0fBcWJx+xvsVddxFjz0BpVI7FxZTtH/qC+LWYD6TYp4="
+        },
+        {
+          "tag": "LINK",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-eager/a.css",
+          "integrity": "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+        },
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-eager/b.js",
+          "integrity": "sha256-Pw7Zh8BVjsGNvrU1pAqFSTcja4/yg6bf0XKWwmVpFLI="
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/css-carrier-eager/b.js' with computed SHA-256 integrity 'UcuOmkzXLXmDtpk+gMae1DbT/eA0wjuT5S0EVtODET0='. The resource has been blocked."
+      ]
+    },
+    {
+      "name": "css-carrier-lazy-no-split",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:ready",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "tag": "LINK",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-lazy-no-split/a.css",
+          "integrity": "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+        },
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-lazy-no-split/a.js",
+          "integrity": "sha256-ycU86yYBlssVvEMsQaqeYVuQWKZKeS/pL124u51LhzA="
+        },
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/normal/css-carrier-lazy-no-split/b.js",
+          "integrity": "sha256-Pw7Zh8BVjsGNvrU1pAqFSTcja4/yg6bf0XKWwmVpFLI="
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "css-carrier-lazy-no-split",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/css-carrier-lazy-no-split/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "tag": "LINK",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-lazy-no-split/a.css",
+          "integrity": "sha256-GUQy6oMbRz/tH6BzQ99LIhAEGpiQ4atnxg+5GIoKcUw="
+        },
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-lazy-no-split/a.js",
+          "integrity": "sha256-ycU86yYBlssVvEMsQaqeYVuQWKZKeS/pL124u51LhzA="
+        },
+        {
+          "tag": "SCRIPT",
+          "url": "http://127.0.0.1:<port>/tampered/css-carrier-lazy-no-split/b.js",
+          "integrity": "sha256-Pw7Zh8BVjsGNvrU1pAqFSTcja4/yg6bf0XKWwmVpFLI="
+        }
+      ],
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/css-carrier-lazy-no-split/b.js' with computed SHA-256 integrity 'UcuOmkzXLXmDtpk+gMae1DbT/eA0wjuT5S0EVtODET0='. The resource has been blocked."
+      ]
+    }
+  ],
+  "incrementalBuilds": [
+    {
+      "name": "lazy-partial",
+      "config": {
+        "hashLoading": "lazy",
+        "incremental": {
+          "chunksRuntimeRequirements": true,
+          "chunksHashes": false,
+          "chunkAsset": false,
+          "silent": true,
+          "buildModuleGraph": true,
+          "finishModules": true,
+          "optimizeDependencies": true,
+          "buildChunkGraph": true,
+          "optimizeChunkModules": true,
+          "moduleIds": true,
+          "chunkIds": true,
+          "modulesHashes": true,
+          "modulesCodegen": true,
+          "modulesRuntimeRequirements": true,
+          "emitAssets": true
+        }
+      },
+      "captures": [
+        {
+          "phase": "initial",
+          "aContainsLazyRegistration": true,
+          "reportedLazyModules": [
+            {
+              "name": "webpack/runtime/sri_lazy_hashes_a",
+              "identifier": "webpack/runtime/sri_lazy_hashes_a"
+            }
+          ],
+          "incrementalLogs": {
+            "rspack.incremental.buildChunkGraph": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "3 chunk group created"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk cache invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group created from cache"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by cannot rebuild"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by incorrect available modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          },
+          "value": "b:initial",
+          "buildMarker": "initial",
+          "requests": [
+            {
+              "filename": "a.js",
+              "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "expected": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "matches": true
+            },
+            {
+              "filename": "b.js",
+              "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "expected": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "matches": true
+            }
+          ],
+          "allVerified": true
+        },
+        {
+          "phase": "rebuild",
+          "aContainsLazyRegistration": false,
+          "reportedLazyModules": [],
+          "incrementalLogs": {
+            "rspack.incremental.chunkIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 chunks are updated by set_chunk_id, with 3 chunks using name as id, and 0 unnamed chunks"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunksRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.finishModules": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_async"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.moduleIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_module_id, with 0 unnamed modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesCodegen": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          },
+          "value": "b:initial",
+          "buildMarker": "updated",
+          "requests": [
+            {
+              "filename": "a.js",
+              "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+              "expected": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+              "matches": true
+            },
+            {
+              "filename": "b.js",
+              "integrity": null,
+              "expected": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "matches": false
+            }
+          ],
+          "allVerified": false
+        }
+      ]
+    },
+    {
+      "name": "lazy-full-runtime-requirements",
+      "config": {
+        "hashLoading": "lazy",
+        "incremental": {
+          "chunksRuntimeRequirements": false,
+          "chunksHashes": false,
+          "chunkAsset": false,
+          "silent": true,
+          "buildModuleGraph": true,
+          "finishModules": true,
+          "optimizeDependencies": true,
+          "buildChunkGraph": true,
+          "optimizeChunkModules": true,
+          "moduleIds": true,
+          "chunkIds": true,
+          "modulesHashes": true,
+          "modulesCodegen": true,
+          "modulesRuntimeRequirements": true,
+          "emitAssets": true
+        }
+      },
+      "captures": [
+        {
+          "phase": "initial",
+          "aContainsLazyRegistration": true,
+          "reportedLazyModules": [
+            {
+              "name": "webpack/runtime/sri_lazy_hashes_a",
+              "identifier": "webpack/runtime/sri_lazy_hashes_a"
+            }
+          ],
+          "incrementalLogs": {
+            "rspack.incremental.buildChunkGraph": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "3 chunk group created"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk cache invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group created from cache"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by cannot rebuild"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by incorrect available modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          },
+          "value": "b:initial",
+          "buildMarker": "initial",
+          "requests": [
+            {
+              "filename": "a.js",
+              "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "expected": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "matches": true
+            },
+            {
+              "filename": "b.js",
+              "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "expected": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "matches": true
+            }
+          ],
+          "allVerified": true
+        },
+        {
+          "phase": "rebuild",
+          "aContainsLazyRegistration": true,
+          "reportedLazyModules": [
+            {
+              "name": "webpack/runtime/sri_lazy_hashes_a",
+              "identifier": "webpack/runtime/sri_lazy_hashes_a"
+            }
+          ],
+          "incrementalLogs": {
+            "rspack.incremental.chunkIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 chunks are updated by set_chunk_id, with 3 chunks using name as id, and 0 unnamed chunks"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.finishModules": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_async"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.moduleIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_module_id, with 0 unnamed modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesCodegen": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          },
+          "value": "b:initial",
+          "buildMarker": "updated",
+          "requests": [
+            {
+              "filename": "a.js",
+              "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "expected": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "matches": true
+            },
+            {
+              "filename": "b.js",
+              "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "expected": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "matches": true
+            }
+          ],
+          "allVerified": true
+        }
+      ]
+    },
+    {
+      "name": "eager-partial",
+      "config": {
+        "hashLoading": "eager",
+        "incremental": {
+          "chunksRuntimeRequirements": true,
+          "chunksHashes": false,
+          "chunkAsset": false,
+          "silent": true,
+          "buildModuleGraph": true,
+          "finishModules": true,
+          "optimizeDependencies": true,
+          "buildChunkGraph": true,
+          "optimizeChunkModules": true,
+          "moduleIds": true,
+          "chunkIds": true,
+          "modulesHashes": true,
+          "modulesCodegen": true,
+          "modulesRuntimeRequirements": true,
+          "emitAssets": true
+        }
+      },
+      "captures": [
+        {
+          "phase": "initial",
+          "aContainsLazyRegistration": false,
+          "reportedLazyModules": [],
+          "incrementalLogs": {
+            "rspack.incremental.buildChunkGraph": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "3 chunk group created"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk cache invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group created from cache"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by cannot rebuild"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by incorrect available modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          },
+          "value": "b:initial",
+          "buildMarker": "initial",
+          "requests": [
+            {
+              "filename": "a.js",
+              "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+              "expected": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+              "matches": true
+            },
+            {
+              "filename": "b.js",
+              "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "expected": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "matches": true
+            }
+          ],
+          "allVerified": true
+        },
+        {
+          "phase": "rebuild",
+          "aContainsLazyRegistration": false,
+          "reportedLazyModules": [],
+          "incrementalLogs": {
+            "rspack.incremental.chunkIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 chunks are updated by set_chunk_id, with 3 chunks using name as id, and 0 unnamed chunks"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunksRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.finishModules": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_async"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.moduleIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_module_id, with 0 unnamed modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesCodegen": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          },
+          "value": "b:initial",
+          "buildMarker": "updated",
+          "requests": [
+            {
+              "filename": "a.js",
+              "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+              "expected": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+              "matches": true
+            },
+            {
+              "filename": "b.js",
+              "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "expected": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "matches": true
+            }
+          ],
+          "allVerified": true
+        }
+      ]
+    },
+    {
+      "name": "lazy-default-incremental",
+      "config": {
+        "hashLoading": "lazy",
+        "incremental": true
+      },
+      "captures": [
+        {
+          "phase": "initial",
+          "aContainsLazyRegistration": true,
+          "reportedLazyModules": [
+            {
+              "name": "webpack/runtime/sri_lazy_hashes_a",
+              "identifier": "webpack/runtime/sri_lazy_hashes_a"
+            }
+          ],
+          "incrementalLogs": {
+            "rspack.incremental.buildChunkGraph": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "3 chunk group created"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk cache invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group invalidated"
+                },
+                {
+                  "type": "log",
+                  "message": "0 chunk group created from cache"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by cannot rebuild"
+                },
+                {
+                  "type": "log",
+                  "message": "0 cache missed by incorrect available modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          },
+          "value": "b:initial",
+          "buildMarker": "initial",
+          "requests": [
+            {
+              "filename": "a.js",
+              "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "expected": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "matches": true
+            },
+            {
+              "filename": "b.js",
+              "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "expected": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "matches": true
+            }
+          ],
+          "allVerified": true
+        },
+        {
+          "phase": "rebuild",
+          "aContainsLazyRegistration": true,
+          "reportedLazyModules": [],
+          "incrementalLogs": {
+            "rspack.incremental.chunkAsset": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunkIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 chunks are updated by set_chunk_id, with 3 chunks using name as id, and 0 unnamed chunks"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunksHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.chunksRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 chunks are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.finishModules": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_async"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.moduleIds": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                },
+                {
+                  "type": "log",
+                  "message": "0 modules are updated by set_module_id, with 0 unnamed modules"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesCodegen": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesHashes": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            },
+            "rspack.incremental.modulesRuntimeRequirements": {
+              "entries": [
+                {
+                  "type": "log",
+                  "message": "1 modules are affected, 3 in total"
+                }
+              ],
+              "filteredEntries": 0,
+              "debug": false
+            }
+          },
+          "value": "b:initial",
+          "buildMarker": "updated",
+          "requests": [
+            {
+              "filename": "a.js",
+              "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "expected": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+              "matches": true
+            },
+            {
+              "filename": "b.js",
+              "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "expected": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+              "matches": true
+            }
+          ],
+          "allVerified": true
+        }
+      ]
+    }
+  ],
+  "incrementalBrowser": [
+    {
+      "name": "lazy-partial",
+      "phase": "initial",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-partial/initial/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-partial/initial/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "lazy-partial",
+      "phase": "initial",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/lazy-partial/initial/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-partial/initial/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-partial/initial/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/lazy-partial/initial/b.js' with computed SHA-256 integrity 'e1vpn7TC4uofFudQB7fhesTEH+7MOZDfy4anm6d30Po='. The resource has been blocked."
+      ]
+    },
+    {
+      "name": "lazy-partial",
+      "phase": "rebuild",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-partial/rebuild/a.js",
+          "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+          "attribute": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-partial/rebuild/b.js",
+          "integrity": "undefined",
+          "attribute": "undefined"
+        }
+      ],
+      "errors": [
+        "Error parsing 'integrity' attribute ('undefined'). The hash algorithm must be one of 'sha256', 'sha384', 'sha512', or 'ed21159', followed by a '-' character."
+      ]
+    },
+    {
+      "name": "lazy-partial",
+      "phase": "rebuild",
+      "behavior": "tampered",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": true,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-partial/rebuild/a.js",
+          "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+          "attribute": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-partial/rebuild/b.js",
+          "integrity": "undefined",
+          "attribute": "undefined"
+        }
+      ],
+      "errors": [
+        "Error parsing 'integrity' attribute ('undefined'). The hash algorithm must be one of 'sha256', 'sha384', 'sha512', or 'ed21159', followed by a '-' character."
+      ]
+    },
+    {
+      "name": "lazy-full-runtime-requirements",
+      "phase": "initial",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-full-runtime-requirements/initial/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-full-runtime-requirements/initial/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "lazy-full-runtime-requirements",
+      "phase": "initial",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/lazy-full-runtime-requirements/initial/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-full-runtime-requirements/initial/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-full-runtime-requirements/initial/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/lazy-full-runtime-requirements/initial/b.js' with computed SHA-256 integrity 'e1vpn7TC4uofFudQB7fhesTEH+7MOZDfy4anm6d30Po='. The resource has been blocked."
+      ]
+    },
+    {
+      "name": "lazy-full-runtime-requirements",
+      "phase": "rebuild",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-full-runtime-requirements/rebuild/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-full-runtime-requirements/rebuild/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "lazy-full-runtime-requirements",
+      "phase": "rebuild",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/lazy-full-runtime-requirements/rebuild/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-full-runtime-requirements/rebuild/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-full-runtime-requirements/rebuild/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/lazy-full-runtime-requirements/rebuild/b.js' with computed SHA-256 integrity 'e1vpn7TC4uofFudQB7fhesTEH+7MOZDfy4anm6d30Po='. The resource has been blocked."
+      ]
+    },
+    {
+      "name": "eager-partial",
+      "phase": "initial",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/normal/eager-partial/initial/a.js",
+          "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+          "attribute": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/normal/eager-partial/initial/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "eager-partial",
+      "phase": "initial",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/eager-partial/initial/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/tampered/eager-partial/initial/a.js",
+          "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+          "attribute": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/tampered/eager-partial/initial/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/eager-partial/initial/b.js' with computed SHA-256 integrity 'e1vpn7TC4uofFudQB7fhesTEH+7MOZDfy4anm6d30Po='. The resource has been blocked."
+      ]
+    },
+    {
+      "name": "eager-partial",
+      "phase": "rebuild",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/normal/eager-partial/rebuild/a.js",
+          "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+          "attribute": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/normal/eager-partial/rebuild/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "eager-partial",
+      "phase": "rebuild",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/eager-partial/rebuild/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/tampered/eager-partial/rebuild/a.js",
+          "integrity": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8=",
+          "attribute": "sha256-GpjvayQhg+VVcDRZJW2c98XeylNB9NvEK/xyGK4hoY8="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/tampered/eager-partial/rebuild/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/eager-partial/rebuild/b.js' with computed SHA-256 integrity 'e1vpn7TC4uofFudQB7fhesTEH+7MOZDfy4anm6d30Po='. The resource has been blocked."
+      ]
+    },
+    {
+      "name": "lazy-default-incremental",
+      "phase": "initial",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-default-incremental/initial/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-default-incremental/initial/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "lazy-default-incremental",
+      "phase": "initial",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/lazy-default-incremental/initial/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-default-incremental/initial/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-default-incremental/initial/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/lazy-default-incremental/initial/b.js' with computed SHA-256 integrity 'e1vpn7TC4uofFudQB7fhesTEH+7MOZDfy4anm6d30Po='. The resource has been blocked."
+      ]
+    },
+    {
+      "name": "lazy-default-incremental",
+      "phase": "rebuild",
+      "behavior": "normal",
+      "loaded": true,
+      "value": "b:initial",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-default-incremental/rebuild/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/normal/lazy-default-incremental/rebuild/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "lazy-default-incremental",
+      "phase": "rebuild",
+      "behavior": "tampered",
+      "loaded": false,
+      "error": "ChunkLoadError: Loading chunk b failed.\n(error: http://127.0.0.1:<port>/tampered/lazy-default-incremental/rebuild/b.js)",
+      "tamperedExecuted": false,
+      "requests": [
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-default-incremental/rebuild/a.js",
+          "integrity": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw=",
+          "attribute": "sha256-yyQQNWVWydaDG63SxRTGCAOpEMPCCJ4ocVB6XJY2urw="
+        },
+        {
+          "src": "http://127.0.0.1:<port>/tampered/lazy-default-incremental/rebuild/b.js",
+          "integrity": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY=",
+          "attribute": "sha256-MqsKHfZPI4pO+shoAwFqjVKl2sV32gJ7Y98th59IQPY="
+        }
+      ],
+      "errors": [
+        "Failed to find a valid digest in the 'integrity' attribute for resource 'http://127.0.0.1:<port>/tampered/lazy-default-incremental/rebuild/b.js' with computed SHA-256 integrity 'e1vpn7TC4uofFudQB7fhesTEH+7MOZDfy4anm6d30Po='. The resource has been blocked."
+      ]
+    }
+  ]
+}
